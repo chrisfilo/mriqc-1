@@ -1,4 +1,4 @@
--e git+https://github.com/poldracklab/niworkflows#egg=niworkflows
 -e git+https://github.com/nipy/nipype#egg=nipype
+-e git+https://github.com/poldracklab/niworkflows#egg=niworkflows
 mock
 -r ../requirements.txt
