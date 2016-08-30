@@ -3,7 +3,7 @@
 # @Author: oesteban
 # @Date:   2015-11-19 16:44:27
 # @Last Modified by:   oesteban
-# @Last Modified time: 2016-08-29 17:20:02
+# @Last Modified time: 2016-08-29 17:47:32
 """ MRIQC setup script """
 import os
 import sys
@@ -70,9 +70,6 @@ def main():
     )
 
 if __name__ == '__main__':
-    from subprocess import call
-    call(['pip', 'install', '-e', 'git+https://github.com/nipy/nipype#egg=nipype'])
-    call(['pip', 'install', 'niworkflows'])
     LOCAL_PATH = os.path.dirname(os.path.abspath(sys.argv[0]))
     os.chdir(LOCAL_PATH)
     sys.path.insert(0, LOCAL_PATH)
