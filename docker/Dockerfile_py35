@@ -54,7 +54,7 @@ RUN pip install -r /root/src/mriqc/requirements.txt
 
 WORKDIR /root/src/mriqc
 
-RUN pip install -e .[all]
+RUN pip install .[all]
 
 RUN mkdir /niworkflows_data
 ENV CRN_SHARED_DATA /niworkflows_data
