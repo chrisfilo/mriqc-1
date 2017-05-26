@@ -43,7 +43,7 @@ dependencies:
         timeout: 3200
 test:
   override:
-    - docker-compose -f $HOME/mriqcwebapi/dockereve-master/docker-compose.yml up 
+    - docker-compose -f $HOME/mriqcwebapi/dockereve-master/docker-compose.yml up :
         background: true
     - sleep 10
     - curl --retry 10 --retry-delay 15 -vkf http://localhost
